@@ -61,7 +61,8 @@ body {
 .hero {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 80px;
     padding: 80px 10%;
     min-height: 75vh;
 }
@@ -114,7 +115,6 @@ body {
     border-radius: 50%;
     object-fit: cover;
     object-position:center 20%;
-    transform:scale(1.2);
     border: 8px solid #151515;
     display: block;
     margin: 0 auto;
