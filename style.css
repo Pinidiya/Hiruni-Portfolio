@@ -111,7 +111,7 @@ body {
 
 .hero-image img {
     width: 320px;
-    height: 320px;
+    height: 330px;
     border-radius: 0;
     object-fit: contain;
     object-position:center 20%;
