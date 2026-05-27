@@ -116,6 +116,8 @@ body {
     object-position:center 20%;
     transform:scale(1.2);
     border: 8px solid #151515;
+    display: block;
+    margin: 0 auto;
 }
 
 .skills-section { padding: 40px 10% 100px 10%; }
