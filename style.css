@@ -114,11 +114,11 @@ body {
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
-    object-position:center top;
+    object-position:center 20%;
     border: 8px solid #151515;
     display: block;
     margin: 0 auto;
-    transform: scale(1.3);
+    
 }
 
 .skills-section { padding: 40px 10% 100px 10%; }
