@@ -110,6 +110,24 @@
         </form>
     </div>
 </section>
+    <script>
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+const elements = document.querySelectorAll(
+    ".hero-content, .hero-image, .skill-card, .contact-form"
+);
+
+elements.forEach(el => {
+    el.classList.add("hidden");
+    observer.observe(el);
+});
+</script>
 
 </body>
 </html>
