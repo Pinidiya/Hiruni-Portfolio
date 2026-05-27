@@ -114,6 +114,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
     object-position:center 20%;
+    transform:scale(1.2);
     border: 8px solid #151515;
 }
 
