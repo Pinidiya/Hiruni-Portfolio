@@ -114,18 +114,36 @@ body {
     box-shadow: 0 0 20px rgba(79,161,0,0.4);
 
 }
+.btn-primary {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+     color: white !important;
+    transition: all 0.3s ease;
+}
+.btn-cv {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    padding: 14px 28px;
+    border: 1px solid #333;
+    border-radius: 8px;
+     color: white !important;
+    transition: all 0.3s ease;
+}
 
 .btn-cv:hover {
     transform: scale(1.05);
     border-color: var(--accent-color);
     color: var(--accent-color);
+    
 }
-.btn-primary,
-.btn-cv,
-.nav-cv {
-    color: white !important;
-    transition: all 0.3s ease;
-}
+
 
 .hero-image img {
     width: 320px;
