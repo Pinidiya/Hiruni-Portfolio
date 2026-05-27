@@ -280,11 +280,11 @@ body {
 }
 .footer {
     text-align: center;
-    padding: 40px 10%;
+    padding: 35px 10%;
     color: var(--text-dim);
     font-size: 0.9rem;
-    border-top: 1px solid #222;
-    background: rgba(255,255,255,0.02);
+    border-top: 1px solid rgba(79, 161, 0, 0.2);
+    background: rgba(255, 255, 255, 0.02);
     backdrop-filter: blur(10px);
     margin-top: 60px;
 }
