@@ -143,6 +143,21 @@ body {
     color: var(--accent-color);
     
 }
+.typing-text {
+    font-size: 1.1rem;
+    color: var(--text-dim);
+    min-height: 30px;
+}
+
+.typing-text::after {
+    content: "|";
+    color: var(--accent-color);
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
 
 
 .hero-image img {
