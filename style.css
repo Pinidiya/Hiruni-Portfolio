@@ -147,9 +147,9 @@ body {
 
 .hero-image img {
     width: 320px;
-    height: 330px;
-    border-radius: 0;
-    object-fit: contain;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
     object-position:center 20%;
     border: 8px solid #151515;
     display: block;
