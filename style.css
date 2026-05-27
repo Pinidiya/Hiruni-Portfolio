@@ -101,29 +101,16 @@ body {
 .hero-actions { display: flex; gap: 20px; }
 
 .btn-primary:hover {
-    background-color: var(--accent-color);
-    color: white;
-    padding: 16px 32px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
+    
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(79,161,0,0.4);
+
 }
 
 .btn-cv:hover {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: white;
-    text-decoration: none;
-    padding: 14px 28px;
-    border: 1px solid #333;
-    border-radius: 8px;
-    transition: 0.3s;
     transform: scale(1.05);
     border-color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 .hero-image img {
@@ -259,12 +246,4 @@ body {
 .submit-btn:hover {
     background-color: #00cc52;
 }
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
-}
 
-.hero-image img {
-    animation: float 4s ease-in-out infinite;
-}
