@@ -31,7 +31,7 @@
         <div class="hero-content">
             <span class="uni-tag">Undergraduate Student</span>
             <h1>I'm Hiruni Pinidiya</h1>
-            <p>I am a passionate student developer specializing in building modern web applications and UI/UX design.</p>
+            <p class="typing-text"></p>
             
             <div class="hero-actions">
                 <a href="https://github.com/Pinidiya?tab=repositories"  class="btn-primary" target="_blank">View My Work</a>
@@ -127,6 +127,44 @@ elements.forEach(el => {
     el.classList.add("hidden");
     observer.observe(el);
 });
+ const textArray = [
+    "Frontend Developer",
+    "React Learner",
+    "UI Designer",
+    "Full Stack Learner"
+];
+
+let i = 0;
+let j = 0;
+let currentText = "";
+let isDeleting = false;
+
+function typeEffect() {
+    currentText = textArray[i];
+
+    if (isDeleting) {
+        j--;
+    } else {
+        j++;
+    }
+
+    document.querySelector(".typing-text").textContent = currentText.substring(0, j);
+
+    if (!isDeleting && j === currentText.length) {
+        isDeleting = true;
+        setTimeout(typeEffect, 1200);
+        return;
+    }
+
+    if (isDeleting && j === 0) {
+        isDeleting = false;
+        i = (i + 1) % textArray.length;
+    }
+
+    setTimeout(typeEffect, isDeleting ? 50 : 100);
+}
+
+typeEffect();       
 </script>
 <footer class="footer">
     <p>© 2026 Hiruni Pinidiya | All Rights Reserved</p>
