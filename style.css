@@ -268,11 +268,13 @@ body {
     padding: 30px;
     border-radius: 10px;
     text-align: left;
+    transition: all 0.3s ease;
+    will-change: transform;
 }
 .contact-form:hover {
     border-color: var(--accent-color);
-    transform: translateY(-3px);
-    transition: 0.3s ease;
+    transform: translateY(-6px);
+    
 }
 
 .form-group {
