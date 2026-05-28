@@ -269,11 +269,12 @@ body {
     border-radius: 10px;
     text-align: left;
     transition: all 0.3s ease;
-    will-change: transform;
+    will-change: transform, box-shadow;
 }
 .contact-form:hover {
     border-color: var(--accent-color);
     transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
     
 }
 
