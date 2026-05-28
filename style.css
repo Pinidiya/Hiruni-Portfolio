@@ -269,6 +269,11 @@ body {
     border-radius: 10px;
     text-align: left;
 }
+.contact-form:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-3px);
+    transition: 0.3s ease;
+}
 
 .form-group {
     margin-bottom: 20px;
